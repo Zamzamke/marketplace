@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-61xl=$m91)zqqlp9=&q=mch+i#73soe81zs_0z2d4d!dnz)!r_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = [*]
+# ALLOWED_HOSTS = ['2060-196-200-37-199.ngrok-free.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '0950-41-139-168-163.ngrok-free.app'  # Updated Ngrok URL
+]
 
 
 # Application definition
@@ -37,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Our apps
+    'ads',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +129,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AFRICASTALKING_USERNAME = 'sandbox'
+AFRICASTALKING_API_KEY = 'atsk_789a74e781c2d1f5dd34b928537db324c419fec8b9e6f5135d96dd67806ec5ff13cbd107'
